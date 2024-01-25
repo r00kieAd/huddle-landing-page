@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="main-container">
+        <div id="main">
+            <div id="logo"><img src="images/logo.svg" alt=""></div>
+            <div id="sub-container">
+                <div id="illustration"><img src="images/illustration-mockups.svg" alt=""></div>
+                <div id="written-content">
+                    <h1>
+                        Build The Community Your Fans Will Love
+                    </h1>
+                    <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+                        Create connections with your users as you engage in genuine discussion.</p>
+                    <button id="reg">Register</button>
+                </div>
+            </div>
+            <div id="bottom-container">
+                <img class="sociallinks fb" src="images/facebook-logo.png" alt="">
+                <img class="sociallinks hiddenlinks fb2" src="images/facebook-color.png" alt="">
+                <img class="sociallinks x" src="images/twitter.png" alt="">
+                <img class="sociallinks hiddenlinks x2" src="images/twitter-color.png" alt="">
+                <img class="sociallinks insta" src="images/instagram.png" alt="">
+                <img class="sociallinks hiddenlinks insta2" src="images/instagram-color.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('.fb').mouseenter(function () {
+            $(this).hide();
+            $('.fb2').show();
+        }
+        )
+        $('.fb2').mouseleave(function () {
+            $(this).hide();
+            $('.fb').show();
+        })
+        $('.x').mouseenter(function () {
+            $(this).hide();
+            $('.x2').show();
+        })
+        $('.x2').mouseleave(function () {
+            $(this).hide();
+            $('.x').show();
+        })
+        $('.insta').mouseenter(function () {
+            $(this).hide();
+            $('.insta2').show();
+        })
+        $('.insta2').mouseleave(function () {
+            $(this).hide();
+            $('.insta').show();
+        })
+    </script>
+</body>
+
+</html>
