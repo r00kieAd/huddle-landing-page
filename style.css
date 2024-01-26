@@ -5,6 +5,8 @@
 
 body {
     background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--violet);
 }
 
@@ -13,7 +15,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 85%;
+    width: 82rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -84,11 +86,110 @@ p {
     display: none;
 }
 
-.sociallinks, .hiddenlinks {
-    margin: 0 2px;
+.sociallinks,
+.hiddenlinks {
+    margin: 0 5px;
 }
 
-.sociallinks:hover, .hiddenlinks:hover {
+.sociallinks:hover,
+.hiddenlinks:hover {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+    body {
+        background-image: url('images/bg-mobile.svg');
+    }
+    
+    #main {
+        width: 90%;
+    }
+
+    #sub-container {
+        margin-top: 5vh;
+    }
+
+
+    #illustration img {
+        width: 40rem;
+        height: 100%;
+    }
+
+    #written-content {
+        width: 45rem;
+        height: auto;
+        margin-top: -1vh;
+        margin-left: 3%;
+    }
+
+    #bottom-container {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #main {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 99%;
+    }
+    
+    #logo {
+        position: relative;
+    }
+    
+    #logo img {
+        width: 12rem;
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 2%;
+    }
+    
+    #sub-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8vh;
+        padding: 3%;
+    }
+
+    #illustration {
+        position: relative;
+    }
+
+    #illustration img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #written-content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 15px;
+        margin: 1rem 0;
+    }
+    
+    #reg {
+        width: 150px;
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    #bottom-container {
+        float: none;
+        display: flex;
+        margin: 4% 0;
+        justify-content: center;
+    }
+}
